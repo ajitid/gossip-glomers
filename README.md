@@ -17,4 +17,7 @@ To run & verify, first build the project using `go build .` and then run it like
 ```pwsh
 cd maelstrom-lib
 sudo java -jar .\maelstrom.jar test -w echo --bin ..\gossip-glomers.exe --node-count 1 --time-limit 10
+# or
+sudo java -jar .\maelstrom.jar test -w unique-ids --bin ..\gossip-glomers.exe --time-limit 30 --rate 1000 --node-count 3 --availability total --nemesis partition
+# etc.
 ```
